@@ -1,0 +1,128 @@
+\documentclass[12pt,letterpaper]{hmcpset}
+\usepackage[margin=1in]{geometry} 
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+% info for header block in upper right hand corner
+\name{ }
+\class{Math 60}
+\assignment{HW 3}
+\duedate{Thursday, May 19, 2016}
+
+\newcommand{\pn}[1]{\left( #1 \right)}
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\bk}[1]{\left[ #1 \right]}
+
+\newcommand{\pf}[2]{\frac{\partial#1}{\partial#2}}
+
+\renewcommand{\labelenumi}{{(\alph{enumi})}}
+
+\begin{document}
+
+\problemlist{2.5.\{6, 14, 24, 36\}, 2.6.\{6, 12, 18\}}
+
+\begin{problem}[2.5.6]
+    A rectangular stick of butter is placed in the microwave oven to
+    melt. When the butter's length is 6 in and its square cross
+    section measures 1.5 in on a side, its length is decreasing at a
+    rate of 0.25 in/min and its cross-sectional edge is decreasing at
+    a rate of 0.125 in/min. How fast is the butter melting (i.e., at
+    what rate is the solid volume of butter turning to liquid) at that
+    instant?
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[2.5.14]
+    Suppose that $z=f(x+y,x-y)$ has continuous partial derivatives
+    with respect to $u=x+y$ and $v=x-y$. Show that
+    \[
+        \pf{z}{x}\pf{z}{y}=\pn{\pf{z}{u}}^2-\pn{\pf{z}{v}}^2.
+    \]
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[2.5.24]
+    In Exercises 19-27, calculate $D(\textbf{f}\circ\textbf{g})$ in
+    two ways: (a) by first evaluating $\textbf{f}\circ\textbf{g}$ and
+    (b) by using the chain rule and the derivative matrices
+    $D\textbf{f}$ and $D\textbf{g}$.\\\\
+    $\textbf{f}(x,y,z)=(x^2y+y^2z,xyz,e^z),\\
+    \textbf{g}(t)=(t-2,3t+7,t^3)$
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[2.5.36]
+    Suppose that you are given an equation of the form
+    \[
+        F(x,y,z)=0,
+    \]
+    for example, something like $x^3z+y\cos z+(\sin y)/z=0$. Then we
+    may consider $z$ to be defined implicitly as a function $z(x,y)$.
+    \begin{enumerate}
+        \item Use the chain rule to show that if $F$ and $z(x,y)$ are
+            both assumed to be differentiable, then
+            \[
+                \pf{z}{x}=-\frac{F_x(x,y,z)}{F_z(x,y,z)},\quad
+                \pf{z}{y}=-\frac{F_y(x,y,z)}{F_z(x,y,z)}.
+            \]
+        \item Use part (a) to find $\partial z/\partial x$ and
+            $\partial z/\partial y$ where $z$ is given by the equation
+            $xyz=2$. Check your result by explicitly solving for $z$ and
+            then calculating the partial derivatives.
+    \end{enumerate}
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[2.6.6]
+    In Exercises 2-8, calculate the directional derivative of the
+    given function $f$ at the point \textbf{a} in the direction
+    parallel to the vector \textbf{u}.\\\\
+    $\displaystyle f(x,y,z)=xyz,\textbf{a}=(-1,0,2),
+    \textbf{u}=\frac{2\textbf{k}-\textbf{i}}{\sqrt{5}}$
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[2.6.12]
+    A ladybug (who is very sensitive to temperature) is crawling on
+    graph paper. She is at the point $(3,7)$ and notices that if she
+    moves in the $\textbf{i}$-direction, the temperature
+    \textit{increases} at a rate of 3 deg/cm. If she moves in the
+    $\textbf{j}$-direction, she finds that her temperature
+    \textit{decreases} at a rate of 2 deg/cm. In what direction should
+    the ladybug move if
+    \begin{enumerate}
+        \item she wants to warm up most rapidly?
+        \item she wants to cool off most rapidly?
+        \item she desires her temperature \textit{not} to change?
+    \end{enumerate}
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[2.6.18]
+    In Exercises 16-19, find an equation for the tangent plane to the
+    surface given by the equation at the indicated point
+    $(x_0,y_0,z_0)$.\\\\
+    $2xz+yz-x^2y+10=0,(x_0,y_0,z_0)=(1,-5,5)$
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\end{document}
