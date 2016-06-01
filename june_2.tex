@@ -22,7 +22,7 @@
 
 \begin{document}
 
-\problemlist{7.2.\{6, 14, 22, 28\}, 7.3.\{4, 6\}, 7.4.\{T/F pg.522, 6, 10, 18\}}
+\problemlist{7.2.\{6, 14, 22, 28\}, 7.3.\{4, 6\}, T/F(pg.522)\{6, 10, 18\}}
 
 \begin{problem}[Colley 7.2.6]
     Find $\iint_S(x^2+y^2)~dS$, where $S$ is the lateral surface of
@@ -110,103 +110,20 @@
 \end{solution}
 \newpage
 
-\begin{problem}[Colley True/False page 522]
+\begin{problem}[Colley TRUE/FALSE PAGE 522]
     \begin{enumerate}[label=\textbf{\arabic*.}]
-        \item The function $\bf{X}:\bb{R}^2\to\bb{R}^3$ given by
-            $\bf{X}(s,t)=(2s+3t+1,4s-t,s+2t-7)$ parametrizes the plane
-            $9x-y-14z=107$.
-        \item The function $\bf{X}:\bb{R}^2\to\bb{R}^3$ given by
-            $\bf{X}(s,t)=(s^2+3t-1,s^2+3,-2s^2+t)$ parametrizes the
-            plane $x-7y-3z+22=0$.
-        \item The function
-            $\bf{X}:(-\infty,\infty)\times(-\f{\pi}{2},\f{\pi}{2})\to\bb{R}^3$
-            given by $\bf{X}(s,t)=(s^3+3\tan t-1,s^3+3,-2s^3+\tan t)$
-            parametrizes the plane $x-7y-3z+22=0$.
-        \item The surface $\bf{X}(s,t)=(s^2t,st^2,st)$ is smooth.
+        \setcounter{enumi}{5}
+        \item If $S$ is the unit sphere centered at the origin, then
+            $\iint_Sx^3~dS=0$.
+        \setcounter{enumi}{9}
+        \item $\iint_S(-y\bf{i}+x\bf{j})\cdot d\bf{S}=0$, where $S$ is
+            the cylinder $x^2+y^2=9$, $0\leq z\leq5$.
+        \setcounter{enumi}{17}
+        \item $\iint_S\nabla\times\bf{F}\cdot d\bf{S}$ has the same
+            value for all piecewise smooth, oriented surfaces $S$ that
+            have the same boundary curve $C$.
+            \textit{Hint:} think about what the field is doing.
     \end{enumerate}
-\end{problem}
-\begin{solution}
-    \vfill
-\end{solution}
-\newpage
-
-\begin{problem}[Colley 7.4.6]
-    Exercises 6-10 concern these notions of temperature, heat, and
-    heat flux density.
-    \begin{align*}
-        \text{Use Gauss's theorem to }&\text{derive the
-        \textbf{heat equation},}\\
-        \sigma\rho\p{T}{t}&=k\nabla^2T.
-    \end{align*}
-\end{problem}
-\begin{solution}
-    \vfill
-\end{solution}
-\newpage
-
-\begin{problem}[Colley 7.4.10]
-    Exercises 6-10 concern these notions of temperature, heat, and
-    heat flux density.\\\\
-    Consider the three-dimensional heat equation
-    \begin{equation}\tag{30}
-        \nabla^2u=\p{u}{t}
-    \end{equation}
-    for functions $u(x,y,z,t)$. (Here $\nabla^2u$ denotes the
-    Laplacian $\partial^2u/\partial x^2+\partial^2 u/\partial
-    y^2+\partial^2u/\partial z^2$.) In this exercise, show that any
-    solution $T(x,y,z,t)$ to the heat equation is unique in the
-    following sense: Let $D$ be a bounded solid region in $\bb{R}^3$
-    and suppose that the functions $\alpha(x,y,z)$ and $\phi(x,y,z,t)$
-    are given. Then there exists a unique solution $T(x,y,z,t)$ to
-    equation (30) that satisfies the conditions
-    \begin{align*}
-        T(x,y,z,0)&=\alpha(x,y,z)\quad\text{for }(x,y,z)\in D,\\
-        \text{and}\hspace{5mm}\tag{31}\\
-        T(x,y,z,t)&=\phi(x,y,z,t)\quad\text{for }(x,y,z)\in \partial D
-        \text{ and }t\geq0.
-    \end{align*}
-    To establish uniqueness, let $T_1$ and $T_2$ be two solutions to
-    equation (30) satisfying the conditions in (31) and set
-    $w=T_1-T_2$.
-    \begin{enumerate}
-        \item Show that $w$ must also satisfy equation (30), plus the
-            conditions that
-            \begin{align*}
-                w(x,y,z,0)&=0\quad\text{ for all }(x,y,z)\in D,\\
-                \text{and}\hspace{5mm}\\
-                w(x,y,z,t)&=0\quad\text{ for all }(x,y,z)\in\partial D
-                \text{ and }t\geq0.
-            \end{align*}
-        \item For $t\geq0$, define the ``energy function''
-            \[
-                E(t)=\f{1}{2}\iiint_D[w(x,y,z,t)]^2~dV.
-            \]
-            Use Green's first formula in Theorem 4.1 to show that
-            $E'(t)\leq0$ (i.e., that $E$ does not increase with time).
-        \item Show that $E(t)=0$ for all $t\geq0$. (Hint: Show that
-            $E(0)=0$ and use part (b).)
-        \item Show that $w(x,y,z,t)=0$ for all $t\geq0$ and $(x,
-            y,z)\in D$, and thereby conclude the uniqueness of solutions
-            to equation (30) that satisfy the conditions in (31).
-    \end{enumerate}
-    \textit{Hint:} think about what the field is doing.
-\end{problem}
-\newpage
-\begin{solution}
-    \null\vfill
-\end{solution}
-\newpage
-
-\begin{problem}[Colley 7.4.18]
-    Suppose that $\bf{J}=\sigma\bf{E}$. (This is a version of Ohm's
-    law that obtains in some electric conductors—--here $\sigma$ is a
-    positive constant known as the \textbf{conductivity}.) If
-    $\rho=0$, show that $\bf{E}$ and $\bf{B}$ satisfy the so-called
-    \textbf{telegrapher's equation},
-    \[
-        \nabla^2\bf{F}=\mu_0\sigma\p{\bf{F}}{t}
-        +\mu_0\epsilon_0\p{^2\bf{F}}{t^2}.
-    \]
 \end{problem}
 \begin{solution}
     \vfill
